@@ -89,8 +89,6 @@ header img {
 	position: absolute;
 	-webkit-transform: translateZ(1px);
 	z-index: 10;
-	transform: translateX(-180%);
-	margin-top: 30%;
 }
 video {
 	min-width: 100vw;
@@ -352,7 +350,6 @@ footer {
 		height: 100vh;
 		max-width: none;
 		min-width: auto;
-		transform: translateX(-29%);
 	}
 	.header img {
 		transform: translateX(-29%);
