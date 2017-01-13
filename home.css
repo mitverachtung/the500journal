@@ -331,7 +331,7 @@ footer {
 .footer_rechts svg:hover path {
 	fill: #E0ED3F;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	header {
 		width: auto;
 		height: 100vh;
