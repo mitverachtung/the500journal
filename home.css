@@ -143,6 +143,7 @@ p {
 	height: 500px;
 	margin: -100px auto 100px;
 	position: relative;
+	overflow: hidden;
 }
 .intro_background img {
 	position: absolute;
