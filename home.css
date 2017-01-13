@@ -181,10 +181,12 @@ break {
 	padding: 70px 60px;
 	display: flex;
 	flex-wrap: wrap;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .day:hover {
 	background-blend-mode: multiply;
-	background-size: cover;
 }
 
 .day:hover h1.hover {
