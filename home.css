@@ -88,6 +88,8 @@ nav a:hover::before {
 header img {
 	z-index: 999999999;
 	position: absolute;
+	-webkit-transform: translate3d(0,0,1px);
+	transform: translate3d(0,0,1px);
 }
 video {
 	min-width: 100vw;
