@@ -431,7 +431,8 @@ footer {
 		display: none;
 	}
 	.map {
-		width: 150%;
+		width: 100%;
 		transform: translateX(-15%);
+
 	}
 }
