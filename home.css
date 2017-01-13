@@ -434,14 +434,14 @@ footer {
 	.day03,
 	.day04 {
 		width: calc(100% - 20px);
-		height: calc(100vh - 10px);
+		height: calc(90vh - 10px);
 		margin: 10px;
 		padding: 40px 20px;
 	}
 	.day02_a {
 		padding: 0;
 		margin-right: 10px;
-		width: 100vw;
+		width: calc(100vw - 20px);
 		margin-left: 10px;
 	}
 	.day h1.hover {
