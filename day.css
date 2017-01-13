@@ -24,6 +24,7 @@ header {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	position: relative;
 }
 nav {
 	position: relative;
