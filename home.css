@@ -87,7 +87,8 @@ nav a:hover::before {
 }
 header img {
 	position: absolute;
-	-webkit-transform: translateZ(1px)
+	-webkit-transform: translateZ(1px);
+	z-index: 10;
 }
 video {
 	min-width: 100vw;
@@ -95,6 +96,7 @@ video {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 p {
 	font-size: 20px;
@@ -348,7 +350,10 @@ footer {
 		height: 100vh;
 		max-width: none;
 		min-width: auto;
-		transform: translateX(-33%);
+		transform: translateX(-29%);
+	}
+	.header img {
+		transform: translateX(-29%);
 	}
 	nav {
 		margin-top: -30px;
@@ -406,6 +411,8 @@ footer {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		max-width: 100%;
+		padding: 20px;
 	}
 	.intro_textblock img {
 		width: 80%;
