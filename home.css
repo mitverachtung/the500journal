@@ -86,7 +86,7 @@ nav a:hover::before {
 	background: #F6708E;
 }
 header img {
-	z-index: 10;
+	z-index: 999999999;
 	position: absolute;
 }
 video {
