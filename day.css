@@ -410,6 +410,11 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+	.map {
+		width: 100%;
+		max-width: 100vw;
+		padding: 0;
+	}
 }
 @media screen and (max-width: 414px) {
 	.track img {
@@ -429,9 +434,5 @@ footer {
 	}
 	.block1 .altitute {
 		display: none;
-	}
-	.map {
-		width: 100%;
-		max-width: 100vw;
 	}
 }
