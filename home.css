@@ -139,10 +139,14 @@ p {
 	margin-bottom: 40px;
 }
 .intro_background {
-	max-width: 1024px;
-	height: 500px;
+	height: 450px;
+	width: 100vw;
+	max-width: 100vw;
+	min-width: 100%;
+	overflow: hidden;
 	margin: -100px auto 100px;
 	position: relative;
+	padding-top: 30px;
 }
 .intro_background img {
 	position: absolute;
@@ -409,12 +413,9 @@ footer {
 		margin: 0 auto;
 	}
 	.intro_background {
-		max-width: 100vw;
 		margin-top: -150px;
 		padding-top: 30px;
-		overflow: hidden;
 		margin-bottom: 0;
-		height: 370px;
 	}
 	.intro_background img {
 		transform: scale(0.55);
