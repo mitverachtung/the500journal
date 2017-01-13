@@ -196,16 +196,14 @@ break {
 	margin-left: -48%;
 	background-image: url(assets/img/Teaser-Day1.jpg);
 }
-.day02_a {
-	margin-right: -474px;
-}
 .day02 {
-	margin-top: -400px;
-	margin-right: -48%;
 	background-image: url(assets/img/Teaser-Day2.jpg);
 }
+.test {
+	margin-right: -474px;
+}
 .day03 {
-	width: 720px;
+	width: 731320px;
 	height: 600px;
 	margin-left: -40px;
 	margin-top: -40px;
