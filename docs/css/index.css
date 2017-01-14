@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	color: inherit;
+	list-style: none;
+}
+#video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	color: #FFF;
+}
+/* --- HEADER --- */
+header {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+header .logo {
+	height: 300px;
+	width: 144px;
+	margin: -100px auto 0;
+	align-self: top;
+}
+header .navigation {
+	width: 100%;
+	height: 100px;
+	padding-top: 50px;
+}
+header .navigation ul {
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+header .navigation li {
+	font-size: 22px;
+	margin: 0 30px;
+	position: relative;
+}
+header .navigation li::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 2px;
+	height: 24px;
+	background: #FFF;
+	margin: 3px 0 0 -30px;
+	opacity: .3;
+}
+header .navigation li:first-child::before {
+	display: none;
+}
+header .navigation li:hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 120%;
+	margin: -21% 0 0 -10%;
+	height: 3px;
+	background: #F6708E;
+}
+/* --- INTRO --- */
+.background {
+	display: block;
+	max-width: 100vw;
+	width: 100%;
+	background-color: #B5B6B5;
+	background-image: url(img/background.png);
+	background-repeat: repeat;
+}
+.intro {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 120px 0 0 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.intro .line {
+	width: 2px;
+	height: 200px;
+	margin: -200px auto 0;
+	background: #FFF;
+}
+.intro h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 100px;
+	line-height: 100px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 150px auto 70px;
+	max-width: 360px;
+	width: 100%;
+}
+.intro p {
+	max-width: 400px;
+	width: 100%;
+	font-size: 20px;
+	margin: 0 -400px 60px 0;
+}
+.intro img.badge {
+	width: 320px;
+	height: 383px;
+	margin: -310px 0 0 -480px;
+}
+.seperator_1  {
+	width: 100vw;
+	margin: -150px 0 0 0;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
