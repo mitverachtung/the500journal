@@ -82,7 +82,7 @@ header .navigation li:hover::after {
 	max-width: 100vw;
 	width: 100%;
 	background-color: #B5B6B5;
-	background-image: url(img/background.png);
+	background-image: url(../img/background.png);
 	background-repeat: repeat;
 }
 .intro {
@@ -136,10 +136,62 @@ header .navigation li:hover::after {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 150px;
 }
 .tiles a {
 	display: block;
-	padding: 110px 70px;
+	padding: 70px 60px;
+	position: relative;
+}
+.tiles a:hover h2 {
+	display: table-caption;
+}
+.tiles h1,
+.tiles h2 {
+	font-family: 'Anton', sans-serif;
+	font-size: 48px;
+	line-height: 52px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: table-caption;
+}
+.tiles h2 {
+	display: none;
+	color: #E0ED3F;
+}
+.track {
+	position: absolute;
+	max-width: 412px;
+	width: 100%;
+	bottom: 55px;
+	display: flex;
+}
+.thr .track {
+	max-width: 600px;
+}
+.track .line {
+	width: 100%;
+	height: 1px;
+	background: #FFF;
+	margin: 15px 40px 0 30px;
+	position: relative;
+}
+.track .line::after {
+	content: '';
+	width: 28px;
+	height: 28px;
+	display: block;
+	position: absolute;
+	background: url(../img/home/linehead.svg);
+	right: -14px;
+	top: -13px;
+}
+.track p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	display: block;
 }
 a.one {
 	width: 532px;
@@ -178,4 +230,60 @@ a.fou {
 }
 a.day:hover {
 	background-blend-mode: multiply;
+}
+.seperator_2  {
+	width: 100vw;
+	margin: 0 0 0 0;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	margin-bottom: 170px;
+}
+.seperator_2 img {
+	margin-left: -650px;
+}
+.seperator_2 ul {
+	margin-left: 100px;
+}
+.seperator_2 li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.seperator_2 h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 64px;
+	letter-spacing: 4px;
+	line-height: 64px;
+}
+.seperator_2 p {
+	font-size: 18px;
+	letter-spacing: 1px;
+	width: 100%;
+	text-align: center;
+	top: 50px;
+}
+.footer {
+	width: 100vw;
+	background: rgba(97, 108, 112, 0.2);
+	padding: 110px 0px;
+}
+.footer p {
+	font-size: 20px;
+	letter-spacing: 1.11px;
+	line-height: 28px;
+	display: block;
+}
+.footer a {
+	color: #E0ED3F;
+}
+.footer_wrapper {
+	max-width: 1024px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px 0;
+	margin: 0 auto;
 }
