@@ -4,6 +4,7 @@
 	text-decoration: none;
 	color: inherit;
 	list-style: none;
+	box-sizing: border-box;
 }
 #video {
 	position: fixed;
@@ -92,13 +93,13 @@ header .navigation li:hover::after {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	overflow-x: hidden;
 }
 .intro .line {
 	width: 2px;
 	height: 200px;
 	margin: -200px auto 0;
 	background: #FFF;
+	z-index: 10;
 }
 .intro h1 {
 	font-family: 'Anton', sans-serif;
@@ -123,8 +124,58 @@ header .navigation li:hover::after {
 }
 .seperator_1  {
 	width: 100vw;
-	margin: -150px 0 0 0;
+	margin: -150px 0 140px 0;
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
+}
+.tiles {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.tiles a {
+	display: block;
+	padding: 110px 70px;
+}
+a.one {
+	width: 532px;
+	height: 680px;
+	align-self: flex-start;
+	background-color: #1E2A66;
+	background-image: url(../img/home/tiles_1.jpg);
+	z-index: 4;
+}
+a.two {
+	width: 532px;
+	height: 680px;
+	align-self: flex-end;
+	margin: -400px 0 0 0;
+	background-color: #1E2A66;
+	background-image: url(../img/home/tiles_2.jpg);
+	z-index: 3;
+}
+a.thr {
+	width: 720px;
+	height: 600px;
+	align-self: center;
+	margin: -40px 0 0 0;
+	background-color: #4462FF;
+	background-image: url(../img/home/tiles_3.jpg);
+	z-index: 2;
+}
+a.fou {
+	width: 532px;
+	height: 680px;
+	align-self: flex-start;
+	margin: -40px 0 0 0;
+	background-color: #1E2A66;
+	background-image: url(../img/home/tiles_4.jpg);
+	z-index: 1;
+}
+a.day:hover {
+	background-blend-mode: multiply;
 }
