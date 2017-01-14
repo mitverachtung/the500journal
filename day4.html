@@ -10,16 +10,26 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	    <script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').on('click touchend', function(e) {
+			var el = $(this);
+			var link = el.attr('href');
+			window.location = link;
+			});
+
+			});
+		</script>
 	</head>
 	<body>
 		<a class="return" href="index.html"><img src="img/back.svg"></a>
 		<header class="days day_four">
 			<nav class="navigation">
 				<ul>
-					<li><a href="day1.html">Day 01</a></li>
-					<li><a href="day2.html">Day 02</a></li>
-					<li><a href="day3.html">Day 03</a></li>
-					<li><a class="active" href="day4.html">Day 04</a></li>
+					<li><a href="day1.html">01</a></li>
+					<li><a href="day2.html">02</a></li>
+					<li><a href="day3.html">03</a></li>
+					<li><a class="active" href="day4.html">04</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper">
@@ -57,8 +67,9 @@
 					</div>
 					<img class="altitude" src="img/day1/altitude.png">
 				</div>
-				<img class="map" src="img/day1/map.png">
+				<img class="map map4" src="img/day4/map.png">
 			</section>
+			<div class="bildmodul_wrapper">
 			<section class="content_bildmodul">
 				<p>
 					En Alemania se dice para el día de año nuevo
@@ -68,6 +79,7 @@
 				<img class="bild2" src="img/day1/1.jpg">
 				<p style="clear:both;">&nbsp;</p>
 			</section>
+		</div>
 			<section class="content_text">
 				<p>
 					Me siento como si estuviera entrando al estadio en el final de una gran maratón. Falta tan poco pero aún hay trabajo por hacer. Es así que como en Alemania te desean un buen deslice en este día, fue así que tomé un tren hasta St. Gallen en Suiza con el objetivo de que mi último viaje fuera de placer y no de sufrimiento.
@@ -89,13 +101,15 @@
 				</p>
 				<p>
 					Una hora después de mi salida me encontraba ya de nuevo en el lago en la ciudad de Rorschach, tomando una pequeña pausa y recuperar energías no sólo para el resto de la ruta, sino que para la noche :)				</p>
+				</section>
 				<div class="container">
 			      <div id="slides">
 			        <img src="img/day1/gallery1.png">
 			        <img src="img/day1/gallery2.png">
 			        <img src="img/day1/gallery3.png">
 			      </div>
-			    </div>
+			  </div>
+			  <section class="content_text">
 				<p>
 					La isla de Lindau fue mi última estación relevante de este recorrido, admirando la ciudad y el gran faro del puerto que tiene como atractivo. Junto al faro, se sienta un gran león (León de Bayern) que mira hacia Suiza y Austria y protege la ciudad.
 
@@ -113,7 +127,7 @@
 					Primero a mi amante y esposa Miriam, al prestarme su bicicleta para esta noble acción. Por sobre todo también de que me haya dado estos días para mis proyectos personales, cuando en realidad lo único que quería ella era estar estas vacaciones más conmigo.
 				</p>
 				<p>
-					También un especial –Gracias!– a Mauricio Palma por su amistad y generosidad en ayudarme en la programación y soporte técnico. A  Felix Lehmann también en preparar el diseño para la web.
+					También un especial –Gracias!– a <a class="textlink" href="mailto:mauricio.palma@woodlikeocean.com">Mauricio Palma</a> por su amistad y generosidad en ayudarme en la programación y soporte técnico. A  <a class="textlink" href="mailto:splitxd1@me.com">Felix Lehmann</a> también en preparar el diseño para la web.
 				</p>
 			</section>
 			<footer class="footer">

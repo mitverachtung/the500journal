@@ -7,31 +7,45 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').on('click touchend', function(e) {
+			var el = $(this);
+			var link = el.attr('href');
+			window.location = link;
+			});
+
+			});
+			#
+		</script>
 	</head>
 	<body>
-		<video playsinline autoplay loop id="video">
-			<source src="vid/header.mp4" type="video/mp4">
+		<video playsinline loop autoplay id="video">
+			<source src="vid/header.mp4" type="video/mp4" poster="vid/header.jpg">
 		</video>
 		<header>
 			<nav class="navigation">
 				<ul>
-					<li><a href="day1.html">Dia 01</a></li>
-					<li><a href="day2.html">Dia 02</a></li>
-					<li><a href="day3.html">Dia 03</a></li>
-					<li><a href="day4.html">Dia 04</a></li>
+					<li><a href="day1.html">01</a></li>
+					<li><a href="day2.html">02</a></li>
+					<li><a href="day3.html">03</a></li>
+					<li><a href="day4.html">04</a></li>
 				</ul>
 			</nav>
 			<img class="logo" src="img/home/header_logo.png">
 		</header>
 		<div class="background">
 			<section class="intro">
-				<div class="line"></div>
-				<h1>Mi Travesia</h1>
+				<h1>Mi<br>diario</h1>
 				<p>
-					Un viaje de 4 días la hacia la reflexión y hacia uno mismo, en una aventura por las rutas del campo intransitadas, aisladas por los cristales de hielo, el frío de invierno y el gris de las mañanas
+					Un viaje de 4 días la hacia uno mismo. Un momento para la reflexión, en una aventura por rutas del campo intransitadas, aisladas por los cristales de hielo,  el frío de invierno y el gris de las mañanas.
 				</p>
 				<p>
-					Una ruta por el sur de Francia, Suiza y Alemania para pensar y meditar. ¿Pero por qué lo hacemos? ¿Por qué tantos kilómetros que recorrer? Quizás es para darnos cuenta de que somos capaces de realizar cualquier cosa si es que nos lo proponemos, o para simplemente hacernos recordar de que no son las ruedas de una bicicleta que gira por el mundo, si no que somos nosotros, que con cada impulso y tracción que hacemos al pedalear, los responsables de que el mundo se mueva.
+					Una ruta por el sur de Francia, Suiza y Alemania para pensar y meditar. ¿Pero por qué lo hacemos? ¿Por qué tantos kilómetros que recorrer? Quizás es para darnos cuenta de que somos capaces de realizar cualquier cosa si es que nos lo proponemos, o para simplemente hacernos recordar de que no son las ruedas de una bicicleta que gira por el mundo, si no que somos nosotros, que con cada impulso y tracción que hacemos, los responsables de que el mundo se mueva.
+				</p>
+				<p>
+					Esta historia es parte del desafío que Rapha invita a todos los aficionados a realizar 500 kilómetros en bicicleta entre navidad y año nuev, llamado Festive 500.
 				</p>
 				<img class="badge" src="img/home/intro_badge.png">
 			</section>

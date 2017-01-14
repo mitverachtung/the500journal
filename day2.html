@@ -10,16 +10,26 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	    <script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').on('click touchend', function(e) {
+			var el = $(this);
+			var link = el.attr('href');
+			window.location = link;
+			});
+
+			});
+		</script>
 	</head>
 	<body>
 		<a class="return" href="index.html"><img src="img/back.svg"></a>
 		<header class="days day_two">
 			<nav class="navigation">
 				<ul>
-					<li><a href="day1.html">Day 01</a></li>
-					<li><a class="active" href="day2.html">Day 02</a></li>
-					<li><a href="day3.html">Day 03</a></li>
-					<li><a href="day4.html">Day 04</a></li>
+					<li><a href="day1.html">01</a></li>
+					<li><a class="active" href="day2.html">02</a></li>
+					<li><a href="day3.html">03</a></li>
+					<li><a href="day4.html">04</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper">
@@ -57,8 +67,10 @@
 					</div>
 					<img class="altitude" src="img/day2/altitude.png">
 				</div>
-				<img class="map" src="img/day2/map.png">
+				<img class="map map2" src="img/day2/map.png">
 			</section>
+
+			<div class="bildmodul_wrapper">
 			<section class="content_bildmodul">
 				<p>
 					Aunque por más que quieras luchar contra la corriente del río, es mejor de que te dejes llevar por la fuerza de este.
@@ -67,6 +79,7 @@
 				<img class="bild2" src="img/day2/1.jpg">
 				<p style="clear:both;">&nbsp;</p>
 			</section>
+		</div>
 			<section class="content_text">
 				<p>
 					Basel amanece con -2 grados. Las temperaturas no descienden como lo pensado, lo que me da un respiro en pensar de que si ayer logré aguantar, pues hoy tambien.
@@ -87,6 +100,7 @@
 				<p>
 					En mi nuevo intento por arreglar por tercera vez la rueda llegué a la conclusión de que el pegamento utilizado ya no hacía efecto, no quedando otra opción que tomar un tren desde Gottmadingen hasta Lindau.
 				</p>
+			</section>
 				<div class="container">
 			      <div id="slides">
 			        <img src="img/day2/gallery1.png">
@@ -94,6 +108,7 @@
 			        <img src="img/day2/gallery3.png">
 			      </div>
 			    </div>
+				<section class="content_text">
 				<p>
 					Para mi terminaba así el día con un poco de frustración y ganas de más, al darme por vencido y decidir llegar el día de hoy hasta aquí. Mi plan para los siguientes dos días tendrán que ser adasptados para completar así los 500 kilómetros.
 				</p>

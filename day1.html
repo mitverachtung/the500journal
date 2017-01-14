@@ -6,20 +6,30 @@
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="stylesheet" href="css/days.css">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	    <script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').on('click touchend', function(e) {
+			var el = $(this);
+			var link = el.attr('href');
+			window.location = link;
+			});
+
+			});
+		</script>
 	</head>
 	<body>
 		<a class="return" href="index.html"><img src="img/back.svg"></a>
 		<header class="days day_one">
 			<nav class="navigation">
 				<ul>
-					<li><a class="active" href="day1.html">Day 01</a></li>
-					<li><a href="day2.html">Day 02</a></li>
-					<li><a href="day3.html">Day 03</a></li>
-					<li><a href="day4.html">Day 04</a></li>
+					<li><a class="active" href="day1.html">01</a></li>
+					<li><a href="day2.html">02</a></li>
+					<li><a href="day3.html">03</a></li>
+					<li><a href="day4.html">04</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper">
@@ -57,16 +67,18 @@
 					</div>
 					<img class="altitude" src="img/day1/altitude.png">
 				</div>
-				<img class="map" src="img/day1/map.png">
+				<img class="map map1" src="img/day1/map.png">
 			</section>
-			<section class="content_bildmodul">
-				<p>
-					Nunca me había una meta tan larga en tan pocos días. Creo que mi peor enemigo será el frío.
-				</p>
-				<img class="bild1" src="img/day1/2.jpg">
-				<img class="bild2" src="img/day1/1.jpg">
-				<p style="clear:both;">&nbsp;</p>
-			</section>
+			<div class="bildmodul_wrapper">
+				<section class="content_bildmodul">
+					<p>
+						Nunca me había una meta tan larga en tan pocos días. Creo que mi peor enemigo será el frío.
+					</p>
+					<img class="bild1" src="img/day1/2.jpg">
+					<img class="bild2" src="img/day1/1.jpg">
+					<p style="clear:both;">&nbsp;</p>
+				</section>
+			</div>
 			<section class="content_text">
 				<p>
 					Mi viaje comienza en Offenburg, Alemania, luego de visitar un par de amigos el día anterior y preparar luego con tranquilidad la bicicleta y mi equipo de viaje, con todo lo necesario para no pasarme de frío.
@@ -87,13 +99,16 @@
 				<p>
 					Muchos ciclistas no encontré camino a Basel (10 a lo maximo?), escondidos seguramente todos del frío.
 				</p>
+			</section>
+
 				<div class="container">
 			      <div id="slides">
 			        <img src="img/day1/gallery1.png">
 			        <img src="img/day1/gallery2.png">
 			        <img src="img/day1/gallery3.png">
 			      </div>
-			    </div>
+			  </div>
+				<section class="content_text">
 				<p>
 					A la altura de Artzenheim la larga ciclovía se termina, a no ser que uno quiera seguir junto al canal con una cyclocross por lo irregular del camino, el cual no era mi caso, desviándome hacia Baltzenheim y Kunheim, donde me llamó extremadamente la atención de cómo los campesinos almacenan el trigo en grande muros hechos del mismo trigo.
 				</p>

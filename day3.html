@@ -10,16 +10,26 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	    <script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('a').on('click touchend', function(e) {
+			var el = $(this);
+			var link = el.attr('href');
+			window.location = link;
+			});
+
+			});
+		</script>
 	</head>
 	<body>
 		<a class="return" href="index.html"><img src="img/back.svg"></a>
 		<header class="days day_three">
 			<nav class="navigation">
 				<ul>
-					<li><a href="day1.html">Day 01</a></li>
-					<li><a href="day2.html">Day 02</a></li>
-					<li><a class="active" href="day3.html">Day 03</a></li>
-					<li><a href="day4.html">Day 04</a></li>
+					<li><a href="day1.html">01</a></li>
+					<li><a href="day2.html">02</a></li>
+					<li><a class="active" href="day3.html">03</a></li>
+					<li><a href="day4.html">04</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper">
@@ -57,8 +67,9 @@
 					</div>
 					<img class="altitude" src="img/day3/altitude.png">
 				</div>
-				<img class="map" src="img/day3/map.png">
+				<img class="map map3" src="img/day3/map.png">
 			</section>
+			<div class="bildmodul_wrapper">
 			<section class="content_bildmodul">
 				<p>
 					El inicio y el fin es el mismo. Todo vuelve a su punto de origen. El tiempo nos hace sabios y fuertes.
@@ -67,6 +78,7 @@
 				<img class="bild2" src="img/day3/1.jpg">
 				<p style="clear:both;">&nbsp;</p>
 			</section>
+		</div>
 			<section class="content_text">
 				<p>
 					El río Rhin ha estado presente en mi trayecto, en donde la ruta se basó originalmente para ir en dirección en contra del agua, en contra de los elementos, el tiempo o el frío en el rostro.
@@ -98,6 +110,7 @@
 					El camino sin embargo es en relación al nivel de altura, relativamente simple, con la diferencia de que pasando el pueblo de Bodman la ruta sube abruptamente en los próximos 10 kilómetros abruptamente 210 metros de altura.
 
 				</p>
+			</section>
 				<div class="container">
 			      <div id="slides">
 			        <img src="img/day3/gallery1.png">
@@ -105,6 +118,7 @@
 			        <img src="img/day3/gallery3.png">
 			      </div>
 			    </div>
+				<section class="content_text">
 				<p>
 					Arriba en la mini-cumbre, pequeños mercados volantes te ofrecen frutas frescas de la región, ideal para hacer una pequeña pausa. El resto de los 20 kilómetros fue un pequeño suspiro para mis piernas ya que era sólo seguir cuesta abajo.
 
