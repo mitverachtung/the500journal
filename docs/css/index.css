@@ -210,6 +210,9 @@ a.two {
 	background-image: url(../img/home/tiles_2.jpg);
 	z-index: 3;
 }
+a.two br {
+	display: none;
+}
 a.thr {
 	width: 720px;
 	height: 600px;
@@ -228,8 +231,14 @@ a.fou {
 	background-image: url(../img/home/tiles_4.jpg);
 	z-index: 1;
 }
+a.day {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 a.day:hover {
 	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .seperator_2  {
 	width: 100vw;
@@ -286,4 +295,115 @@ a.day:hover {
 	justify-content: space-between;
 	padding: 0 20px 0;
 	margin: 0 auto;
+}
+.footer svg:last-child {
+	margin-left: 50px;
+}
+@media screen and (max-width: 1024px) {
+	.intro p {
+		margin-right: -340px;
+	}
+	.intro img.badge {
+		width: 280px;
+		height: 335px;
+		margin-left: -420px;
+	}
+	.two h1,
+	.two h2 {
+		position: absolute;
+		right: 60px;
+		text-align: right;
+	}
+	.two h2 {
+		top: 175px;
+	}
+	.two br {
+		display: block;
+	}
+}
+@media screen and (max-width: 767px) {
+	header .navigation li {
+		margin: 0 10px;
+	}
+	header .navigation li::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 2px;
+		height: 24px;
+		background: #FFF;
+		margin: 3px 0 0 -10px;
+		opacity: .3;
+	}
+	.intro h1 {
+		font-size: 54px;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.intro p {
+		margin-right: 0;
+		padding: 0 20px;
+		max-width: 100vw;
+		width: 100%;
+	}
+	.intro img.badge {
+		margin: 0;
+	}
+	.seperator_1 {
+		margin-top: -200px;
+		margin-bottom: 0;
+	}
+	.seperator_1 img {
+		margin-left: 320px;
+		transform: scale(.7);
+	}
+	a.one,
+	a.two,
+	a.thr,
+	a.fou {
+		width: 90vw;
+		height: 90vh;
+		margin: 40px 20px;
+		align-self: center;
+		padding: 30px 20px;
+	}
+	.two h1,
+	.two h2 {
+		position: inherit;
+		right: 0;
+		text-align: left;
+	}
+	.tiles h2 {
+		top: 0;
+		display: table-caption;
+	}
+	.track,
+	.thr .track {
+		max-width: calc(90vw - 40px);
+	}
+	.seperator_2 {
+		flex-wrap: wrap-reverse;
+		margin-bottom: 0;
+	}
+	.seperator_2 ul {
+		margin: 0;
+	}
+	.seperator_2 img {
+		margin-top: -150px;
+		margin-left: -550px;
+		transform: scale(.8);
+	}
+	.footer_wrapper {
+		justify-content: center;
+	}
+	.footer_item {
+		margin-bottom: 40px;
+	}
+	.footer svg:last-child {
+		margin: 0;
+	}
+	.social a {
+		margin: 0 20px;
+	}
 }
