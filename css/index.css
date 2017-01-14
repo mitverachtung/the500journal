@@ -173,8 +173,10 @@ header .active {
 	text-transform: uppercase;
 	display: table-caption;
 }
+.tiles a:hover .day {
+	background-blend-mode: multiply;
+}
 .tiles h2 {
-	display: none;
 	color: #E0ED3F;
 }
 .track {
@@ -260,6 +262,9 @@ a.fou {
 a.day {
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+a.day:hover {
+	background-blend-mode: multiply;
 }
 .seperator_2  {
 	width: 100vw;
@@ -543,7 +548,4 @@ a.day {
 	header .logo {
 		transform: scale(.8);
 	}
-}
-@media screen and (min-width: 1025px) {
-
 }
