@@ -320,6 +320,12 @@ a.day:hover {
 .footer a:hover {
 	border-bottom: 1px solid #E0ED3F;
 }
+.footer a:hover {
+	border-bottom: 0 !important;
+}
+.footer a:hover svg path {
+	fill: #E0ED3F;
+}
 .footer_wrapper {
 	max-width: 1024px;
 	width: 100%;
