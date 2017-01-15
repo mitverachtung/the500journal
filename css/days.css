@@ -120,6 +120,7 @@ header .wrapper h1 {
 .content_bildmodul {
 	max-width: 796px;
 	margin: 0 auto;
+	padding-bottom: 40px !important;
 }
 .content_bildmodul p {
 	font-family: 'Times New Roman', sans-serif;
@@ -160,7 +161,8 @@ header .wrapper h1 {
 }
 .content_text img {
 	max-width: 100%;
-	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-bottom: 60px;
 }
 .container {
 	width: 100vw;

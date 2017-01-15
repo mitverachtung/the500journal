@@ -122,14 +122,14 @@ header .active {
 }
 .intro h1 {
 	font-family: 'Anton', sans-serif;
-    font-size: 100px;
-    line-height: 100px;
-    text-transform: uppercase;
-    letter-spacing: 0px;
-    margin: 50px 195px -204px;
-    max-width: 796px;
-    align-self: flex-start;
-    text-align: right;
+	font-size: 100px;
+	line-height: 100px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+    margin: -25px 313px 40px;
+	max-width: 796px;
+	align-self: flex-start;
+	text-align: left;
 }
 .intro p {
 	max-width: 400px;
@@ -141,11 +141,11 @@ header .active {
 .intro img.badge {
 	width: 320px;
 	height: 383px;
-	margin: -350px 0 0 -480px;
+	margin: -528px 0 0 -480px;
 }
 .seperator_1  {
 	width: 100vw;
-	margin: -110px 0 140px 0;
+	margin: 120px 0 140px 0;
 	display: flex;
 	justify-content: center;
 	overflow-x: hidden;
@@ -262,6 +262,7 @@ a.fou {
 a.day {
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 a.day:hover {
 	background-blend-mode: multiply;
@@ -359,6 +360,7 @@ a.day:hover {
 		width: 280px;
 		height: 335px;
 		margin-left: -420px;
+		margin-top: -585px;
 	}
 	.two h1,
 	.two h2 {
@@ -372,8 +374,8 @@ a.day:hover {
 	.two br {
 		display: block !important;
 	}
-	.intro h1 {
-	margin: 50px 170px -204px;
+	.seperator_1 {
+		margin: 210px 0 140px 0
 	}
 }
 @media screen and (max-width: 1023px) {
@@ -381,15 +383,31 @@ a.day:hover {
 		margin-left: 10px !important;
 	}
 	.intro h1 {
-    margin: 50px 50px -204px;
+		margin: -25px 320px 40px;
 	}
 	.footer_wrapper {
 		padding: 0 60px;
 	}
 }
+@media screen and (max-width: 768px) {
+	.intro h1 {
+		margin: -25px 192px 40px;
+	}
+}
 @media screen and (max-width: 767px) {
-	a.two {
+	.track {
+		position: absolute;
+		max-width: 412px;
+		width: 100%;
+		bottom: 35px;
+		display: flex;
+	}
+	a.two
+	 {
 		background-position: right;
+	}
+	a.thr {
+		background-position: left;
 	}
 	.content_bildmodul {
 		padding-bottom: 0px;
@@ -420,13 +438,12 @@ a.day:hover {
 		margin-top: 10px;
 	}
 	.intro h1 {
-		font-size: 54px;
-		line-height: 58px;
-		margin-top: 50px;
-		margin-bottom: 40px;
+		width: 100%;
+		max-width: 100%;
+		margin: -50px 0 40px 0;
 		text-align: center;
-		width: 70%;
-
+		font-size: 74px;
+		line-height: 78px;
 	}
 	.intro p {
 		margin-right: 0;
@@ -525,9 +542,6 @@ a.day:hover {
 	}
 	.intro .linehead {
 		height: 150px !important;
-	}
-	.intro h1 {
-		margin-top: 20px;
 	}
 	.intro p {
 		text-align: center;
