@@ -425,4 +425,7 @@ a .day_4 {
 	.header .navigation li {
 		font-size: 26px;
 	}
+	.track > p {
+		font-size: 16px;
+	}
 }
