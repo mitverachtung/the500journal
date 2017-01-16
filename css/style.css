@@ -188,12 +188,12 @@ p > a:hover {
 	opacity: 0;
 	transition: .3s;
 }
-.tiles > a > div:hover:nth-child(3) {
-	background-color: #4462FF;
-}
 .tiles > a > div:hover {
 	background-color: #1E2A66;
 	box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+}
+.tiles > a:hover:nth-child(3) > div {
+	background-color: #4462FF !important;
 }
 .tiles > a > div:hover > h1:last-of-type {
 	opacity: 1;
@@ -203,12 +203,10 @@ a .day_2,
 a .day_4 {
 	width: 532px;
 	height: 680px;
-	background: red;
 }
 a .day_3 {
 	width: 720px;
 	height: 600px;
-	background: red;
 }
 a .day_1 {
 	align-self: flex-start;
@@ -293,6 +291,7 @@ a .day_4 {
 	width: 100%;
 	background: rgba(97, 108, 112, 0.2);
 	padding: 110px 0px;
+	margin-top: 50px;
 }
 .footer p {
 	font-size: 20px;
