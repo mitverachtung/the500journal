@@ -329,10 +329,10 @@ a .day_4 {
 	.tiles a > div > h1:last-of-type {
 		opacity: 1;
 	}
-	.day_2 {
+	a .day_2 {
 		margin-top: -40px;
 	}
-	.day_3 {
+	a .day_3 {
 		margin-left: 0;
 	}
 }
