@@ -2,102 +2,134 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="css/index.css">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+		<title>The 500 Journal | Hector Perez</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+		<link rel="manifest" href="img/fav/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-		<video playsinline autoplay muted loop id="video">
-			<source src="vid/header_1.mp4" type="video/mp4">
+		<video playsinline loop autoplay id="video">
+			<source src="vid/header.mp4" type="video/mp4" poster="vid/header.jpg">
 		</video>
-		<header>
+		<header class="header">
 			<nav class="navigation">
 				<ul>
-					<li><a href="day1.html">Day 01</a></li>
-					<li><a href="day2.html">Day 02</a></li>
-					<li><a href="day3.html">Day 03</a></li>
-					<li><a href="day4.html">Day 04</a></li>
+					<li><a href="day1.html">01</a></li>
+					<li><a href="day2.html">02</a></li>
+					<li><a href="day3.html">03</a></li>
+					<li><a href="day4.html">04</a></li>
 				</ul>
 			</nav>
-			<img class="logo" src="img/home/header_logo.png">
+			<img class="logo" src="img/header_logo.png">
 		</header>
 		<div class="background">
-			<section class="intro">
-				<div class="line"></div>
-				<h1>Mi Travesia</h1>
-				<p>
-					Un viaje de 4 días la hacia la reflexión y hacia uno mismo, en una aventura por las rutas del campo intransitadas, aisladas por los cristales de hielo, el frío de invierno y el gris de las mañanas
-				</p>
-				<p>
-					Una ruta por el sur de Francia, Suiza y Alemania para pensar y meditar. ¿Pero por qué lo hacemos? ¿Por qué tantos kilómetros que recorrer? Quizás es para darnos cuenta de que somos capaces de realizar cualquier cosa si es que nos lo proponemos, o para simplemente hacernos recordar de que no son las ruedas de una bicicleta que gira por el mundo, si no que somos nosotros, que con cada impulso y tracción que hacemos al pedalear, los responsables de que el mundo se mueva.
-				</p>
-				<img class="badge" src="img/home/intro_badge.png">
+			<div class="header_line"></div>
+			<section class="intro_headline">
+				<h1>My Journal</h1>
 			</section>
-			<section class="seperator_1">
-				<img class="illu_1" src="img/home/illu_1.png">
+			<section class="intro_content">
+				<div class="intro_content_links">
+					<img src="img/badge.png">
+				</div>
+				<div class="intro_content_rechts">
+					<p>A four day trip to myself. A moment of reflection in an adventure on untrodden country roads, isolated by ice crystals, the winter coldness and the gray of the mornings.</p>
+					<p>A route through the south of France, Switzerland and Germany to reflect and meditate. But why do we do it? Why so many kilometres to go? Perhaps to realize that we are capable of doing anything if we propose it, or simply to remind us, that not the wheels of a bicycle revolve around the world, but that we are the ones that - with every impulse and traction we do, are responsible for the world to move.</p>
+					<p>This story is part of the challenge that <a href="http://www.rapha.cc" target="_blank">Rapha</a> invites all fans to perform 500 kilometers by bycicle between Christmas and New Year, called <a href="http://pages.rapha.cc/feature/festive-500" target="_blank">#Festive500</a>.</p>
+				</div>
+			</section>
+			<section class="intro_image">
+				<img class="top" src="img/illustration.png">
 			</section>
 			<section class="tiles">
-				<a href="day1.html" class="day one">
-					<h1>Dia 01</h1>
-					<h2>141 KM</h2>
-					<div class="track">
-						<p>Offenburg</p>
-						<div class="line"></div>
-						<p>Basel</p>
+				<a href="day1.html">
+					<div class="day_1">
+						<h1>day 01</h1>
+						<h1>141 km</h1>
+						<div class="track">
+							<p>Offenburg</p>
+							<div class="linie"></div>
+							<p>Basel</p>
+						</div>
 					</div>
 				</a>
-				<a href="day2.html" class="day two">
-					<h1>Dia<br> 02</h1>
-					<h2>102<br> KM</h2>
+				<a href="day2.html">
+				<div class="day_2">
+					<h1>day<br>02</h1>
+					<h1>102<br>km</h1>
 					<div class="track">
 						<p>Basel</p>
-						<div class="line"></div>
+						<div class="linie"></div>
 						<p>Gottmadingen</p>
 					</div>
+				</div>
 				</a>
-				<a href="day3.html" class="day thr">
-					<h1>Dia 03</h1>
-					<h2>175 KM</h2>
+				<a href="day3.html">
+				<div class="day_3">
+					<h1>day 03</h1>
+					<h1>175 km</h1>
 					<div class="track">
 						<p>Lindau</p>
-						<div class="line"></div>
+						<div class="linie"></div>
 						<p>Lindau</p>
 					</div>
+				</div>
 				</a>
-				<a href="day4.html" class="day fou">
-					<h1>Dia 04</h1>
-					<h2>53 KM</h2>
+				<a href="day4.html">
+				<div class="day_4">
+					<h1>day 04</h1>
+					<h1>54 km</h1>
 					<div class="track">
-						<p>Lindau</p>
-						<div class="line"></div>
 						<p>St.&nbsp;Gallen</p>
+						<div class="linie"></div>
+						<p>Lindau</p>
 					</div>
+				</div>
 				</a>
 			</section>
-			<section class="seperator_2">
-				<img class="illu_1" src="img/home/illu_2.png">
+			<section class="facts">
 				<ul>
 					<li>
 						<h1>503</h1>
-						<p>Km. Distancia</p>
+						<p>km distance</p>
 					</li>
 					<li>
 						<h1>740</h1>
-						<p>Mt. Altitud</p>
+						<p>m altitude</p>
 					</li>
 					<li>
 						<h1>8650</h1>
-						<p>Calorías</p>
+						<p>calories total</p>
 					</li>
 				</ul>
+			</section>
+			<section class="intro_image">
+				<img class="bottom" src="img/illustration2.png">
 			</section>
 			<footer class="footer">
 				<div class="footer_wrapper">
 					<div class="footer_item">
-						<p>Ponte en contacto conmigo.
-						<a href="mailto:estronio@gmail.com">Aquí</a></p>
+						<p>Say hello:
+						<a href="mailto:estronio@gmail.com">Email</a></p>
 					</div>
 					<div class="footer_item social">
 						<a href="https://www.strava.com/athletes/4639177" target="_blank">
