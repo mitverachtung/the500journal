@@ -324,6 +324,28 @@ a .day_4 {
 .footer svg:last-child {
 	margin-left: 50px;
 }
+.footer_item {
+	flex-basis: 50%;
+}
+.imprint {
+	max-width: 896px;
+	margin: 0 auto;
+	padding:  0 80px 80px 0;
+}
+.imprint span {
+	display: inline-block;
+	width: 100px;
+}
+.legal {
+	font-size: 14px !important;
+	opacity: .5;
+}
+.legal a {
+	color: #FFF;
+}
+.legal a {
+	text-decoration: underline;
+}
 @media screen and (max-width: 1024px) {
 	.tiles a > div > h1:last-of-type {
 		opacity: 1;
