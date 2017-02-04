@@ -27,37 +27,83 @@
 	</head>
 	<body>
 		<a class="back" href="index.html"><img src="img/back.svg" alt=""></a>
-		<header style="background: url(img/01/head.jpg) #333; background-size: cover; background-position: center">
+		<header style="background: url(img/02/head.jpg) #333; background-size: cover; background-position: center">
 			<nav class="navigation">
 				<ul>
 					<li><a href="01.html">01</a></li>
-					<li><a href="02.html">02</a></li>
+					<li><a class="nav_active" href="02.html">02</a></li>
 					<li><a href="03.html">03</a></li>
 					<li><a href="04.html">04</a></li>
 				</ul>
 			</nav>
+			<div class="day_logo">
+				<img src="img/logo.png">
+				<h1>Day 02</h1>
+			</div>
 		</header>
 		<section class="content">
-			<div class="imprint">
-				<h1>Imprint</h1>
-				<ul style="list-style: none">
-					<li>Hector Perez</li>
-					<li>Boselstraße 15</li>
-					<li>22765 Hamburg</li>
-					<li>&nbsp;</li>
-					<li>E-Mail: estronio@gmail.com</li>
-					<li>Phone: +49 178 6902345</li>
-				</ul>
-				<h1>Data privacy</h1>
-				<h2>Accountability for content</h2>
-				<p>The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this context, please note that we are accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
-				<h2>Accountability for links</h2>
-				<p>Responsibility for the content of external links (to web pages of third parties) lies solely with the operators of the linked pages. No violations were evident to us at the time of linking. Should any legal infringement become known to us, we will remove the respective link immediately.</p>
-				<h2>Copyright</h2>
-				 <p>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights. Individual reproductions of a work are allowed only for private use, so must not serve either directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable (§ 106 of the copyright law).</p>
-			</div>
+			<article class="summary">
+				<div class="infos">
+					<div class="date">
+						29. Dec 2016
+					</div>
+					<div class="table">
+						<div class="table-row">
+							<p>Basel</p>
+							<div class="table-line-solid"></div>
+							<p>Gottmadingen</p>
+						</div>
+						<div class="table-row">
+							<p>&nbsp;</p>
+						</div>
+						<div class="table-row">
+							<p>Distance</p>
+							<div class="table-line"></div>
+							<p>102,7&nbsp;km</p>
+						</div>
+						<div class="table-row">
+							<p>Altitude</p>
+							<div class="table-line"></div>
+							<p>643&nbsp;m</p>
+						</div>
+						<div class="table-row">
+							<p>Calories</p>
+							<div class="table-line"></div>
+							<p>1478&nbsp;kcal</p>
+						</div>
+					</div>
+				</div>
+				<img class="altitude" src="img/02/alt.png">
+				<img src="img/02/map.jpg">
+			</article>
+			<article class="quote">
+				<p>Although as much as you want to fight against the flow of the river, it is better that you let go by the force of it.</p>
+				<img src="img/02/2.jpg">
+				<img src="img/02/1.jpg">
+			</article>
+			<article class="diary">
+				<p>In Basel I started with -2 degrees in the morning. The temperatures had not descended more as I had feared. Thinking that if yesterday I had been able resist it, I would be able to do it again, encouraged me.</p>
+				<p>I left Basel at 9:00 and scheduled my route to cross the border of Switzerland with Germany (Koblenz), continuing later on to Schaffhausen, heading towards Konstanz and passing at the north shore of Lake Bodensee to get to my final destination, the city of Lindau.</p>
+				<p>The first two hours the route did not have special attractions, as it almost always followed the on country roads, accompanied by the constant traffic of cars that exists in the region. Later on the landscape becomes more interesting, passing the side of the Rhine on secondary roads but very well paved.</p>
+				<p>Shortly before 14:00 in Tiengen happened the unexpected. My rear wheel lost air, having to repair it as quickly as possible to take advantage of the few leftover daylight, which twinkled through the clouds lighting up the gray of the sky and the upcoming night.</p>
+				<img src="img/02/3.jpg">
+				<p>At night at about 19:00 close to the town of Bietingen passing a small bumpiness of the cycle path my rear wheel bursted, which makes me to change the wheel again. The fixed wheel did not last long, in fact a couple of kilometres further the repair patch could not take it anymore and the wheel started loosing air again.</p>
+				<p>I did another attempt to fix the wheel for the third time, coming finally to the conclusion that the glue was’t working any more, and there was no other choice for me but to take a train from Gottmadingen to Lindau.</p>
+			</article>
 		</section>
+			<div class="container">
+				<div id="slides">
+					<img src="img/02/g1.jpg">
+					<img src="img/02/g2.jpg">
+					<img src="img/02/g3.jpg">
+				</div>
+			</div>
 		<section class="content">
+			<article class="diary">
+				<p>At the end of that day I ended up a little frustated wishing to have done more kilometres of cycling already, but having to give up due to technical problems. My schedule for the next two days had to be adjusted to complete the 500 kilometers.</p>
+				<img src="img/02/4.jpg">
+				<a class="next" href="03.html">go to day 03</a>
+			</article>
 		</section>
 		<footer class="footer">
 			<div class="footer-container">
@@ -81,3 +127,14 @@
 		</footer>
 	</body>
 </html>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+  $(function() {
+	$('#slides').slidesjs({
+	  width: 940,
+	  height: 528,
+	  navigation: false
+	});
+  });
+</script>

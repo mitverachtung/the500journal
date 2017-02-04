@@ -34,6 +34,8 @@ header {
 	height: 100vh;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 header .logo {
 	height: 300px;
@@ -41,6 +43,8 @@ header .logo {
 	margin: -100px auto 0;
 	align-self: top;
 	position: relative;
+}
+header .imprint {
 }
 header .navigation {
 	width: 100%;
@@ -353,15 +357,6 @@ a.day:hover {
 }
 .footer_cell:nth-child(2) a:last-of-type {
 	margin-left: 40px;
-}
-.imprint {
-	max-width: 896px;
-	margin: 0 20px;
-	margin-bottom: 200px;
-}
-.imprint span {
-	display: inline-block;
-	width: 100px;
 }
 .legal {
 	font-size: 14px !important;

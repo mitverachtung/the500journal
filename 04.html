@@ -27,37 +27,85 @@
 	</head>
 	<body>
 		<a class="back" href="index.html"><img src="img/back.svg" alt=""></a>
-		<header style="background: url(img/01/head.jpg) #333; background-size: cover; background-position: center">
+		<header style="background: url(img/04/head.jpg) #333; background-size: cover; background-position: center">
 			<nav class="navigation">
 				<ul>
 					<li><a href="01.html">01</a></li>
 					<li><a href="02.html">02</a></li>
 					<li><a href="03.html">03</a></li>
-					<li><a href="04.html">04</a></li>
+					<li><a class="nav_active" href="04.html">04</a></li>
 				</ul>
 			</nav>
+			<div class="day_logo">
+				<img src="img/logo.png">
+				<h1>Day 04</h1>
+			</div>
 		</header>
 		<section class="content">
-			<div class="imprint">
-				<h1>Imprint</h1>
-				<ul style="list-style: none">
-					<li>Hector Perez</li>
-					<li>Boselstraße 15</li>
-					<li>22765 Hamburg</li>
-					<li>&nbsp;</li>
-					<li>E-Mail: estronio@gmail.com</li>
-					<li>Phone: +49 178 6902345</li>
-				</ul>
-				<h1>Data privacy</h1>
-				<h2>Accountability for content</h2>
-				<p>The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages. In this context, please note that we are accordingly not obliged to monitor merely the transmitted or saved information of third parties, or investigate circumstances pointing to illegal activity. Our obligations to remove or block the use of information under generally applicable laws remain unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).</p>
-				<h2>Accountability for links</h2>
-				<p>Responsibility for the content of external links (to web pages of third parties) lies solely with the operators of the linked pages. No violations were evident to us at the time of linking. Should any legal infringement become known to us, we will remove the respective link immediately.</p>
-				<h2>Copyright</h2>
-				 <p>Our web pages and their contents are subject to German copyright law. Unless expressly permitted by law (§ 44a et seq. of the copyright law), every form of utilizing, reproducing or processing works subject to copyright protection on our web pages requires the prior consent of the respective owner of the rights. Individual reproductions of a work are allowed only for private use, so must not serve either directly or indirectly for earnings. Unauthorized utilization of copyrighted works is punishable (§ 106 of the copyright law).</p>
-			</div>
+			<article class="summary">
+				<div class="infos">
+					<div class="date">
+						31. Dec 2016
+					</div>
+					<div class="table">
+						<div class="table-row">
+							<p>St.&nbsp;Gallen</p>
+							<div class="table-line-solid"></div>
+							<p>Lindau</p>
+						</div>
+						<div class="table-row">
+							<p>&nbsp;</p>
+						</div>
+						<div class="table-row">
+							<p>Distance</p>
+							<div class="table-line"></div>
+							<p>52,8&nbsp;km</p>
+						</div>
+						<div class="table-row">
+							<p>Altitude</p>
+							<div class="table-line"></div>
+							<p>158&nbsp;m</p>
+						</div>
+						<div class="table-row">
+							<p>Calories</p>
+							<div class="table-line"></div>
+							<p>479&nbsp;kcal</p>
+						</div>
+					</div>
+				</div>
+				<img class="altitude" src="img/04/alt.png">
+				<img src="img/04/map.jpg">
+			</article>
+			<article class="quote">
+				<p>In Germany for New Year`s Eve they wish you “a good slide”. That´s exactly what I had.</p>
+				<img src="img/04/2.jpg">
+				<img src="img/04/1.jpg">
+			</article>
+			<article class="diary">
+				<p>I felt like I was in the final 100 meters at the end of a great marathon. So little to finish but there is still work to be done. Since in Germany for New Year`s Eve everbody whishes you “a good slide”, I decide to take a train to St. Gallen in Switzerland with the aim to really enjoy these last kilometres from my trip rather than only suffering.</p>
+				<p>The 31.12. dawned extremely icy with temperatures of -6 degrees but in spite of the low temperatures I was well prepared. Except for my hands, that always make mi suffer in winter.</p>
+				<p>I arrived with the train to St. Gallen at about 9:30, starting my journey back to Lindau in Germany, without giving me the time to get to know the city, since I had to arrive home early to prepare for the New Year`s Eve dinner.</p>
+				<img src="img/04/3.jpg">
+				<p>Leaving the city and taking route 7 I got immediately into a thick fog, avoiding to see the Lake from the mountains.</p>
+				<p>The road that descends from 700 meters to 400 meters high was abandoned at that time, except for the kiosks at the side of the road selling fireworks.</p>
+				<p>One hour after my departure I arrived again at the town of Rorschach by the lakeside, taking a short break and recovering energy not only for the rest of the way, but also for the night :).</p>
+			</article>
 		</section>
+			<div class="container">
+				<div id="slides">
+					<img src="img/04/g1.jpg">
+					<img src="img/04/g2.jpg">
+					<img src="img/04/g3.jpg">
+				</div>
+			</div>
 		<section class="content">
+			<article class="diary">
+				<p>The island of Lindau was my last relevant stop, admiring the village and the great lighthouse at the harbour. Next to the lighthouse, sits a large lion (Bayern Lion) looking towards Switzerland and Austria and protecting the city.</p>
+				<p>That´s how ended my first Rapha Festive 500 with a great experience for me as a cyclist.</p>
+				<p>There are other tracks that I’ve done between Christmas and New Year, but these were the most relevant that I would like to share. You can see the details of my track in my Strava profile. At the end of this site are the links in case you want to follow me or contact me if you have any doubts about the track.</p>
+				<img src="img/04/4.jpg">
+				<a class="next" href="index.html">go to day 01</a>
+			</article>
 		</section>
 		<footer class="footer">
 			<div class="footer-container">
@@ -81,3 +129,14 @@
 		</footer>
 	</body>
 </html>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script>
+  $(function() {
+	$('#slides').slidesjs({
+	  width: 940,
+	  height: 528,
+	  navigation: false
+	});
+  });
+</script>
